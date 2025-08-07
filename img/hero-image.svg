@@ -1,0 +1,33 @@
+<svg width="600" height="500" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Book Cover -->
+  <rect x="150" y="50" width="300" height="400" rx="5" ry="5" fill="#8b0000" />
+  
+  <!-- Book Pages (side) -->
+  <path d="M450 50 L470 70 L470 450 L450 430 Z" fill="#f0e6d2" />
+  
+  <!-- Book Bottom -->
+  <path d="M150 450 L170 470 L470 470 L450 450 Z" fill="#d4a017" />
+  
+  <!-- Book Title -->
+  <text x="300" y="150" font-family="Montserrat, sans-serif" font-size="24" font-weight="bold" fill="#d4a017" text-anchor="middle">100 STRATEGI</text>
+  <text x="300" y="180" font-family="Montserrat, sans-serif" font-size="24" font-weight="bold" fill="#d4a017" text-anchor="middle">SUN TZU</text>
+  <text x="300" y="210" font-family="Montserrat, sans-serif" font-size="24" font-weight="bold" fill="#d4a017" text-anchor="middle">UMKM</text>
+  <text x="300" y="240" font-family="Montserrat, sans-serif" font-size="24" font-weight="bold" fill="#d4a017" text-anchor="middle">NAIK KELAS</text>
+  
+  <!-- Decorative Line -->
+  <line x1="200" y1="270" x2="400" y2="270" stroke="#d4a017" stroke-width="2" />
+  
+  <!-- Sun Tzu Silhouette -->
+  <path d="M300 320 C330 320, 350 290, 350 260 C350 230, 330 200, 300 200 C270 200, 250 230, 250 260 C250 290, 270 320, 300 320 Z" fill="#d4a017" opacity="0.8" />
+  <path d="M270 330 L330 330 L330 380 L270 380 Z" fill="#d4a017" opacity="0.8" />
+  
+  <!-- Decorative Elements -->
+  <circle cx="200" cy="100" r="15" fill="#d4a017" opacity="0.5" />
+  <circle cx="400" cy="100" r="15" fill="#d4a017" opacity="0.5" />
+  <circle cx="200" cy="400" r="15" fill="#d4a017" opacity="0.5" />
+  <circle cx="400" cy="400" r="15" fill="#d4a017" opacity="0.5" />
+  
+  <!-- Chinese Characters -->
+  <text x="230" y="350" font-family="serif" font-size="20" fill="#d4a017" opacity="0.7">兵法</text>
+  <text x="350" y="350" font-family="serif" font-size="20" fill="#d4a017" opacity="0.7">智慧</text>
+</svg>

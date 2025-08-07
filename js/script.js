@@ -176,19 +176,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   highlightNavigation();
 
-  // Mobile menu toggle
+  // Mobile menu toggle - using Bootstrap's collapse API
   const navbarToggler = document.querySelector(".navbar-toggler");
   const navbarCollapse = document.querySelector(".navbar-collapse");
+  const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+    toggle: false,
+  });
 
   if (navbarToggler) {
-    navbarToggler.addEventListener("click", function () {
-      navbarCollapse.classList.toggle("show");
-    });
-
     // Close mobile menu when clicking outside
     document.addEventListener("click", function (e) {
       if (!navbarToggler.contains(e.target) && !navbarCollapse.contains(e.target) && navbarCollapse.classList.contains("show")) {
-        navbarCollapse.classList.remove("show");
+        bsCollapse.hide();
       }
     });
 
@@ -196,7 +195,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".nav-link").forEach((link) => {
       link.addEventListener("click", function () {
         if (navbarCollapse.classList.contains("show")) {
-          navbarCollapse.classList.remove("show");
+          bsCollapse.hide();
         }
       });
     });

@@ -145,9 +145,9 @@ section {
   transition: var(--transition);
 }
 
-.navbar-dark {
+/* .navbar-dark {
   background-color: transparent;
-}
+} */
 
 .navbar-scrolled {
   background-color: rgba(44, 26, 14, 0.95);
@@ -1132,6 +1132,9 @@ section {
 }
 
 @media (max-width: 575px) {
+  .navbar {
+    background-color: rgba(44, 26, 14, 0.95);
+  }
   .hero-title {
     font-size: 1.8rem;
   }
